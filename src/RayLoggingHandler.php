@@ -9,8 +9,21 @@ use Spatie\Ray\Settings\SettingsFactory;
 
 class RayLoggingHandler extends AbstractProcessingHandler
 {
-    public function __construct($level = Logger::DEBUG, $bubble = true)
+    public $config;
+
+    public $defaultColors = [
+        'blue' => ['DEBUG', 'INFO', 'INFO123'],
+        'green' => ['NOTICE'],
+        'yellow' => ['WARNING'],
+        'red' => ['ERROR', 'CRITICAL', 'ALERT', 'EMERGENCY', 'API'],
+    ];
+
+    public function __construct($config)
     {
+        $this->config = $config;
+        $level = Logger::DEBUG;
+        $bubble = true;
+
         parent::__construct($level, $bubble);
     }
 
@@ -36,12 +49,7 @@ class RayLoggingHandler extends AbstractProcessingHandler
 
     protected function getColor($levelName)
     {
-        $colors = [
-            'blue' => ['DEBUG', 'INFO'],
-            'green' => ['NOTICE'],
-            'yellow' => ['WARNING'],
-            'red' => ['ERROR', 'CRITICAL', 'ALERT', 'EMERGENCY', 'API'],
-        ];
+        $colors = $this->config['colors'] ?? $this->defaultColors;
 
         $color = null;
         foreach ($colors as $c => $levels) {

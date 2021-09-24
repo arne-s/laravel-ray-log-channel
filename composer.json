@@ -1,5 +1,5 @@
 {
-    "name": "afsdev/laravel-mail-log-channel",
+    "name": "afsdev/laravel-ray-log-channel",
     "description": "A package to support logging via email in Laravel",
     "homepage": "https://github.com/AFSDev-fr/laravel-mail-log-channel",
     "license": "MIT",

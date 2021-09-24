@@ -21,7 +21,8 @@ class RayLogger
     public function __invoke(array $config)
     {
         $logger = new Logger("RayLoggingHandler");
-        return $logger->pushHandler(new \AFSDev\RayLogChannel\RayLoggingHandler());
+
+        return $logger->pushHandler(new \AFSDev\RayLogChannel\RayLoggingHandler($config));
     }
 
     /**
