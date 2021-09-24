@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "\\AFSDev\\RayLogChannel\\RayLogChannelServiceProvider"
+                "AFSDev\\RayLogChannel\\RayLogChannelServiceProvider"
             ]
         }
     }
