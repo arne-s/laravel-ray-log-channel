@@ -1,0 +1,38 @@
+{
+    "name": "afsdev/laravel-mail-log-channel",
+    "description": "A package to support logging via email in Laravel",
+    "homepage": "https://github.com/AFSDev-fr/laravel-mail-log-channel",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "logging",
+        "spatie",
+        "ray",
+        "debug"
+    ],
+    "require": {
+        "illuminate/bus": "^5.6|^6.0|^7.0|^8.0",
+        "illuminate/log": "^5.6|^6.0|^7.0|^8.0",
+        "illuminate/support": "^5.6|^6.0|^7.|^8.00",
+        "spatie/ray": "^1.30"
+    },
+    "autoload": {
+        "psr-4": {
+            "AFSDev\\RayLogChannel\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arne Stulp",
+            "email": "a.stulp@programic.com",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AFSDev\\RayLogChannel\\RayLogChannelServiceProvider"
+            ]
+        }
+    }
+}
