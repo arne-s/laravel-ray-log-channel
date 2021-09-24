@@ -15,7 +15,7 @@ class RayLogChannelServiceProvider extends ServiceProvider
     public function register()
     {
         if ($this->app['log'] instanceof LogManager) {
-            $this->app['log']->extend('mail', function ($app, array $config) {
+            $this->app['log']->extend('ray', function ($app, array $config) {
                 $logger = new RayLogger();
 
                 return $logger($config);
