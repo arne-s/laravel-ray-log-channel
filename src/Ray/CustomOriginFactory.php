@@ -26,8 +26,7 @@ class CustomOriginFactory implements \Spatie\Ray\Origin\OriginFactory
     protected function getFrame()
     {
         $frames = $this->getAllFrames();
-
-        $indexOfRay = $this->getIndexOfRayFrame($frames)  ;
+        $indexOfRay = $this->getIndexOfRayFrame($frames);
 
         return $frames[$indexOfRay] ?? null;
     }

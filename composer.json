@@ -1,7 +1,7 @@
 {
     "name": "afsdev/laravel-ray-log-channel",
-    "description": "A package to support logging via email in Laravel",
-    "homepage": "https://github.com/AFSDev-fr/laravel-mail-log-channel",
+    "description": "Log messages using Spatie Ray",
+    "homepage": "https://github.com/arne-s/laravel-ray-log-channel",
     "license": "MIT",
     "keywords": [
         "laravel",
@@ -24,8 +24,8 @@
     "authors": [
         {
             "name": "Arne Stulp",
-            "email": "a.stulp@programic.com",
-            "role": "Developer"
+            "email": "info@afsdev.nl",
+            "role": "developer"
         }
     ],
     "extra": {
