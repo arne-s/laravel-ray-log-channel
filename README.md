@@ -19,7 +19,7 @@ but it can also be useful when monitoring production applications through SSH.
 You can install this package via composer using this commands:
 
 ```sh
-composer require afdev/laravel-ray-log-channel
+composer require afsdev/laravel-ray-log-channel
 ```
 
 ## Configuration
