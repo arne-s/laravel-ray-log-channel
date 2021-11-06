@@ -47,7 +47,7 @@ Optionally, you can customize the used colors for each level:
   'driver' => 'ray',
   'level' => 'debug',
   'colors' => [ 
-      'blue' => ['DEBUG', 'INFO', 'INFO123'],
+      'blue' => ['DEBUG', 'INFO', 'INFO'],
       'green' => ['NOTICE'],
       'yellow' => ['WARNING'],
       'red' => ['ERROR', 'CRITICAL', 'ALERT', 'EMERGENCY', 'API'],
