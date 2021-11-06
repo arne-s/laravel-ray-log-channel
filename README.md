@@ -12,7 +12,7 @@ but it can also be useful when monitoring production applications through SSH.
 - The filename and line number of the log message is included in each log, so one click brings your editor to the exact place the log message was called
 - Minimum log level and colors are configurable
 
-![Examples](.github/demo.png)i
+![Examples](.github/demo.png)
 
 ## Install
 
